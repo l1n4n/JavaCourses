@@ -2,3 +2,7 @@
     - write unitests before substantial methods
     - use eclipse's Junit to create unitest
         - [Tutorial](https://courses.cs.washington.edu/courses/cse143/11wi/eclipse-tutorial/junit.shtml)
+        - [A more comprehensive (longer?) tutorial](http://enos.itcollege.ee/~jpoial/allalaadimised/reading/JUnit-Tutorial.pdf)
+    - use eclipse's debug function
+        - [trace failed cases](https://stackoverflow.com/questions/2128244/in-eclipse-how-do-i-see-the-input-to-assert-assertequals-when-it-fails?noredirect=1&lq=1)
+        - [display](https://help.eclipse.org/mars/index.jsp?topic=%2Forg.eclipse.jdt.doc.user%2FgettingStarted%2Fqs-14.htm) window to do calculate
