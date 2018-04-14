@@ -1,7 +1,7 @@
 - Use setter/getter to set/access attributes of an instance
     - attributes should be made *private*
     - setter/getter are *public* method
-    - the constructor might has no parameter, which could be convenient
+    - the constructor might has no parameter, acutally the default one has none, see [more explaination](https://www.cis.upenn.edu/~matuszek/General/JavaSyntax/constructors.html)
 - Enhanced for loop || Updating while looping an arrayList
     - use index loop instead if want to modify the arrayList
 - Write JavaDoc
