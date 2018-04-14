@@ -1,0 +1,4 @@
+- TDD: Test Driven Development
+    - write unitests before substantial methods
+    - use eclipse's Junit to create unitest
+        - [Tutorial](https://courses.cs.washington.edu/courses/cse143/11wi/eclipse-tutorial/junit.shtml)
