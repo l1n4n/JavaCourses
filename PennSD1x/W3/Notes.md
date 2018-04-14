@@ -4,3 +4,5 @@
     - the constructor might has no parameter, which could be convenient
 - Enhanced for loop || Updating while looping an arrayList
     - use index loop instead if want to modify the arrayList
+- Write JavaDoc
+    - [turn into html](https://stackoverflow.com/questions/4468669/how-to-generate-javadoc-html-in-eclipse)
