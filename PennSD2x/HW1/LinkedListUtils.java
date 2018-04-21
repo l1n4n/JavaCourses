@@ -1,5 +1,5 @@
 
-
+import java.util.Collections;
 import java.util.LinkedList;
 
 /*
@@ -10,23 +10,56 @@ import java.util.LinkedList;
 
 public class LinkedListUtils {
 	
-	public static void insertSorted(LinkedList<Integer> list, int value) {
+	/**
+     * This method assumes the input LinkedList is already sorted in non-descending order, inserts the input int value into the correct location of the list.
+     * If the input LinkedList is null, this method should simply terminate.
+     * @param list
+     * @param value
+     */
+    public static void insertSorted(LinkedList<Integer> list, int value) {
+        if (list != null) {
+            int index = 0;
+            while (index < list.size()) {
+                if (list.get(index) < value) {
+                index++;                
+            }
+                else {
+                    break;
+                }
+            }
+            list.add(index, value);
+        }
 
-		/* IMPLEMENT THIS METHOD! */
+        
 
-	}
-	
+    }
+    
+    /**
+     * removes all instances of the N largest values in the LinkedList.
+     * If the input LinkedList is null or if N is non-positive, this method should simply return without any modifications to the input LinkedList.
+     * @param list
+     * @param N
+     */
+    public static void removeMaximumValues(LinkedList<String> list, int N) {
+        if (list != null && !list.isEmpty() && N > 0) {
+            int counter = 0;
+            while(counter < N && counter < list.size()) {
+                String top = Collections.max(list);
+                while (list.contains(top)){
+                    list.remove(top);
+                }
+                counter++;
+            }
+        }
 
-	public static void removeMaximumValues(LinkedList<String> list, int N) {
+    }
+    
+    public static boolean containsSubsequence(LinkedList<Integer> one, LinkedList<Integer> two) {
 
-		/* IMPLEMENT THIS METHOD! */
-
-	}
-	
-	public static boolean containsSubsequence(LinkedList<Integer> one, LinkedList<Integer> two) {
-
-		/* IMPLEMENT THIS METHOD! */
-		
-		return true; // this line is here only so this code will compile if you don't modify it
-	}
+        if (one != null && !one.isEmpty() && two != null && !two.isEmpty()) {            
+            return Collections.indexOfSubList(one, two) != -1;
+                  }
+        return false;
+        }
 }
+
