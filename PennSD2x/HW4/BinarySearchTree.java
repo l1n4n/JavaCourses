@@ -56,7 +56,7 @@ public class BinarySearchTree<E extends Comparable<E>> {
 		}
 		int cmp = val.compareTo(n.value);
 		if (cmp == 0) {
-			return false; // this ensures that the same value does not appear more than once
+			return false; 
 		} else if (cmp < 0) {
 			if (n.leftChild == null) {
 				n.leftChild = new Node(val);
@@ -140,8 +140,7 @@ public class BinarySearchTree<E extends Comparable<E>> {
 	protected int depth(E val) {
 
 		if (val == null) return -1;
-		return depth(root, 0, val); // this line is here only so this code will compile if you don't modify it
-
+		return depth(root, 0, val); 
 	}
 	public int depth(Node n, int counter, E val) {
 		if (n == null) return - 1;
@@ -184,7 +183,7 @@ public class BinarySearchTree<E extends Comparable<E>> {
 		if (n == null || !contains(n.value)) return false;
 		int lh = height(n.leftChild);
 		int rh = height(n.rightChild);		
-		return Math.abs(lh - rh) <= 1; // this line is here only so this code will compile if you don't modify it
+		return Math.abs(lh - rh) <= 1; 
 
 	}
 	
