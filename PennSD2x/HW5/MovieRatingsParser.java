@@ -13,7 +13,7 @@ public class MovieRatingsParser {
 	/**
 	 * 
 	 * @param allUsersRatings
-	 * @return a TreeMap mapping from the movie¡¯s title to a PriorityQueue of all its associated ratings
+	 * @return a TreeMap mapping from the movie's title to a PriorityQueue of all its associated ratings
 	 */
 	public static TreeMap<String, PriorityQueue<Integer>> parseMovieRatings(List<UserMovieRating> allUsersRatings) {
 		
